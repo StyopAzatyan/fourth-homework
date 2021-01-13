@@ -1,9 +1,12 @@
 import React from "react";
 import "./Button.scss";
 
-const Button = () => {
+const Button = ({ children, onClick }) => {
     return (
-        <button type="submit">Login</button>
+        <button type="submit" onClick={onClick}>
+            {children}
+            
+        </button>
     );
 }
 

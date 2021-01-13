@@ -2,7 +2,8 @@ import './App.css';
 import Layout from './component/Layout/Layout';
 import Footer from './container/Footer/Footer';
 import Header from './container/Header/Header';
-import Form from './container/Form/Form'
+// import Form from './container/Form/Form'
+import Autentication from "./container/Autentication/Autentication";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Header />
       <Layout>
       <main className="app-main-content">
-        <Form />
+      <Autentication />
       </main>
       <Footer />
       </Layout>
