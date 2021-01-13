@@ -26,9 +26,9 @@ const Form = () => {
         e.preventDefault()
         const validateErrors = validate(formInputs)
 
-        if(validateErrors) {
+        if (validateErrors) {
             setErrors(validateErrors);
-        }else {         
+        } else {
             setErrors(null);
         }
     }
@@ -36,11 +36,11 @@ const Form = () => {
     return (
         <div className="form">
             <form onSubmit={handleFormSubmit}>
-                <InputUsername userName={formInputs.userName} handleChangeInput={handleChangeInput}/>
-                <InputPassword password={formInputs.password} handleChangeInput={handleChangeInput}/>
-                <Button/>
+                <InputUsername userName={formInputs.userName} handleChangeInput={handleChangeInput} />
+                <InputPassword password={formInputs.password} handleChangeInput={handleChangeInput} />
+                <Button />
             </form>
-            {errors ? <p className="error-message"> {errors}  </p>  : null }
+            {errors ? <p className="error-message"> {errors}  </p> : null}
         </div>
     );
 }
